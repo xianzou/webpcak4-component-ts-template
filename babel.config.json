@@ -1,0 +1,26 @@
+{
+    "plugins": [
+        [
+        "@babel/plugin-transform-runtime",
+            {
+            "regenerator": false,
+            "useESModules": true
+            }
+        ],
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }]
+    ],
+    "presets": [
+        [
+        "@babel/preset-env",
+            {
+                "modules":false,
+                "useBuiltIns": "usage",
+                "targets": {
+                    "browsers": ["last 2 versions", "ie >= 9"]
+                }
+            }
+        ],
+        "@babel/preset-react"
+    ]
+}

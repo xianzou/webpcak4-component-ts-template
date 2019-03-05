@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+      "noImplicitAny": true,
+      "module":"es2015",
+      "target": "es2016",
+      "declaration":true,
+      "declarationDir":"./@types/",
+      "moduleResolution":"node",
+      "jsx": "preserve",
+      "allowSyntheticDefaultImports": true,
+      "suppressImplicitAnyIndexErrors":true,
+      "lib": ["es6", "es7", "dom"],
+    //   "allowJs": true, //允许直接编译js代码
+      // "typeRoots": ["node_modules/@types"],//定义类型定义文件的根目录
+      //    "types": [ 
+      //      //添加新的类型定义库如 @types/lodash 需要在此处定义
+      //      "lodash"
+      // ],
+  },
+  "include": [
+      "./src/**/*"
+  ],
+  "exclude": [
+      "node_modules",
+      "bin",
+      "lib"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "extends": ["tslint:recommended", "tslint-react","tslint-eslint-rules","tslint-plugin-prettier"],
+  "jsRules": {},
+  "rules": {
+    "prettier":[true, {
+      "singleQuote": true,
+      "tabWidth": 4,
+      "trailingComma": "none"
+    }],
+    "interface-name":[
+      true,
+      "never-prefix"
+    ],
+    "quotemark": [true, "single", "jsx-double"],
+    "trailing-comma": [true, false],
+    "object-literal-sort-keys": false,
+    "no-console": {
+      "severity": "warning",
+      "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+    }
+  },
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": [
+      "config/*.js",
+      "node_modules/**/*.ts",
+      "postcss.config.js",
+      "dist/*.js",
+      "test/*"
+    ]
+  }
+}
+  
